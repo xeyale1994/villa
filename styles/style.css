@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header .headTop {
+    display: flex;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0px 100px;
+}
+header .headTop .headTopLeft {
+    display: flex;
+    column-gap: 10px;
+}
+
+header .headTop .headTopLeft div {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+header .headTop .headTopLeft div:nth-child(1) {
+    border-right: 1px solid rgb(193, 193, 193);
+    padding-right: 10px;
+}
+
+header .headTop .headTopLeft div i {
+    color: orangered;
+}
+
+header .headTop .headTopIconBox {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+header .headTop .headTopIconBox div {
+    background-color: rgb(188, 188, 188);
+    padding: 7px;
+    transition: 0.5s all;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .headTop .headTopIconBox div i {
+    color: white;
+}
+
+header .headTop .headTopIconBox div:hover {
+    background-color: orangered;
+}
+
+header .headBottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    height: 90px;
+    align-items: center;
+}
+
+header .headBottom .headBottomRight {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+header .headBottom .headBottomRight nav ul {
+    display: flex;
+    list-style: none;
+    width: 45vw;
+    justify-content: space-between;
+
+    font-size: 18px;
+}
+.fa-bars {
+    display: none !important;
+}
+
+header .headBottom .headBottomRight .scheduleBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+    width: 200px;
+    height: 40px;
+    border-radius: 100px;
+    padding-right: 15px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+header .headBottom .headBottomRight .scheduleBox .left {
+    background-color: orangered;
+    border-radius: 100%;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .headBottom .headBottomRight .scheduleBox:hover .sch {
+    color: orangered;
+
+    transition: 1s all;
+}
+
+#two {
+    padding: 10px 100px;
+}
+
+.twoTop {
+    display: flex;
+    justify-content: space-between;
+    
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.leftTwoTop {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 400px;
+}
+.borderOrange {
+    background-color: orange;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -40px;
+    left: -30px;
+}
+.ortaBala {
+    background-color: red;
+    width: 300px;
+    height: 500px;
+}
+
+.leftTwoTop h2 {
+    font-size: 40px;
+}
+.leftTwoTop h6 {
+    color: orangered;
+    font-weight: bold;
+    font-size: 14px;
+    border-left: 2px solid orangered;
+    padding-left: 2px;
+}
+
+.rightTwoTop {
+    display: flex;
+
+    align-items: end;
+    gap: 40px;
+}
+
+.rightTwoTop button {
+    border: none;
+    padding: 15px 25px;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+}
+
+.rightTwoTop button:nth-child(1) {
+    background-color: orangered;
+}
+
+@media (max-width: 930px) {
+    .bars {
+        display: block;
+        height: 30px;
+        width: 40px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .bars .topl {
+        transition: 1s all;
+        width: 35px;
+        height: 5px;
+        display: block;
+        background-color: rgb(0, 0, 0);
+        border-radius: 5px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .bars .centerl {
+        transition: 0.5s all;
+        width: 35px;
+        height: 5px;
+        display: block;
+        background-color: black;
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -50%);
+    }
+    .bars .bottoml {
+        transition: 1s all;
+        width: 35px;
+        height: 5px;
+        display: block;
+        background-color: black;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .headTopLeft {
+        flex-wrap: wrap;
+        gap: 7px;
+    }
+    header .headTop .headTopLeft div:nth-child(1) {
+        border: none;
+    }
+    .fa-bars {
+        display: block !important;
+        font-size: 30px;
+    }
+    .headBottomRight {
+        transition: 0.7s all;
+        position: absolute;
+        background-color: blue;
+        height: 100%;
+        width: 400px;
+        flex-direction: column;
+        top: 0;
+        padding: 30px 0;
+        left: -100%;
+        color: white;
+        z-index: 10000;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+}
+
+@media (max-width: 631px) {
+    .rightTwoTop {
+        flex-wrap: wrap;
+    }
+    header .headTop {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: fit-content;
+        padding: 10px 10px;
+        gap: 10px;
+    }
+    .headTopLeft {
+        justify-content: center;
+    }
+    header .headBottom {
+        padding: 20px;
+    }
+    .headBottomRight {
+        position: absolute;
+        background-color: blue;
+        height: 100%;
+        width: 70vw;
+        left: -200%;
+    }
+    #two {
+        padding: 10px 20px;
+    }
+    .rightTwoTop button{
+       
+            flex-grow: 1;
+            flex-basis: 180px;
+        
+    }
+}
